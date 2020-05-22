@@ -51,6 +51,7 @@ namespace DevelopLinkedList
             myList.AddSorted(Convert.ToInt32(Txt02.Text));
             myList.AddSorted(Convert.ToInt32(Txt03.Text));
             myList.AddSorted(Convert.ToInt32(Txt04.Text));
+            myList.AddToBeginning(12345); // out of sorted order
 
 
             LbxOutput.Items.Clear();
