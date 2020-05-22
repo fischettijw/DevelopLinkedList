@@ -52,6 +52,7 @@
     <Compile Include="FrmTesting.Designer.cs">
       <DependentUpon>FrmTesting.cs</DependentUpon>
     </Compile>
+    <Compile Include="LinkedList.cs" />
     <Compile Include="Node.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

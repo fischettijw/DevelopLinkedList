@@ -29,15 +29,31 @@ namespace DevelopLinkedList
 
         private void BtnClick_Click(object sender, EventArgs e)
         {
-            myNode = new Node(Convert.ToInt32(Txt01.Text));
-            myNode.AddToEnd(Convert.ToInt32(Txt02.Text));
-            myNode.AddToEnd(Convert.ToInt32(Txt03.Text));
-            myNode.AddToEnd(Convert.ToInt32(Txt04.Text));
+            //myNode = new Node(Convert.ToInt32(Txt01.Text));
+            //myNode.AddToEnd(Convert.ToInt32(Txt02.Text));
+            //myNode.AddToEnd(Convert.ToInt32(Txt03.Text));
+            //myNode.AddToEnd(Convert.ToInt32(Txt04.Text));
+
+            //LbxOutput.Items.Clear();
+            //LbxOutput.Items.Add(Node.length);
+            //LbxOutput.Items.Add(Node.linkedString);
+            //LbxOutput.Items.Add(myNode.ToString());
+
+            LinkedList myList = new LinkedList();
+            myList.AddToEnd(Convert.ToInt32(Txt01.Text));
+            myList.AddToEnd(Convert.ToInt32(Txt02.Text));
+            myList.AddToEnd(Convert.ToInt32(Txt03.Text));
+            myList.AddToEnd(Convert.ToInt32(Txt04.Text));
+
+            myList.AddToBeginning(12345);
+            //myList.AddToBeginning(Convert.ToInt32(Txt01.Text));
+            //myList.AddToBeginning(Convert.ToInt32(Txt02.Text));
+            //myList.AddToBeginning(Convert.ToInt32(Txt03.Text));
+            //myList.AddToBeginning(Convert.ToInt32(Txt04.Text));
 
             LbxOutput.Items.Clear();
-            LbxOutput.Items.Add(Node.length);
-            LbxOutput.Items.Add(Node.linkedString);
-            LbxOutput.Items.Add(myNode.ToString());
+            LbxOutput.Items.Add(LinkedList.length);
+            LbxOutput.Items.Add(myList.ToString());
         }
 
     }

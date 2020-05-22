@@ -18,7 +18,17 @@ namespace DevelopLinkedList
         {
             data = i;
             next = null;
-            linkedString += data.ToString() + " -> ";
+
+            if (linkedString == "")
+            {
+                linkedString += data.ToString();
+            }
+            else
+            {
+                linkedString += " -> " + data.ToString();
+            }
+
+            //linkedString += (linkedString == "" ? data.ToString() : " -> " + data.ToString());
             length += 1;
         }
 
@@ -36,7 +46,7 @@ namespace DevelopLinkedList
 
         public override string ToString()
         {
-            return "{ " + length.ToString() + " } " + linkedString.Substring(0, linkedString.Length - 4);
+            return "{ " + length.ToString() + " } " + linkedString;
         }
 
     }
