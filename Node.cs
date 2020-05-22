@@ -11,23 +11,16 @@ namespace DevelopLinkedList
 
         public int data;
         public Node next;
+        static public string linkedString = "";
+        static public int length = 0;
 
         public Node(int i)
         {
             data = i;
             next = null;
+            linkedString += data.ToString() + " -> ";
+            length += 1;
         }
-
-        //public void Print(ListBox lbx)
-        //{
-        //    string abc = this.ToString();
-
-        //    lbx.Items.Add(data.ToString());
-        //    if (next != null)
-        //    {
-        //        next.Print(lbx);
-        //    }
-        //}
 
         public void AddToEnd(int data)
         {
@@ -43,7 +36,7 @@ namespace DevelopLinkedList
 
         public override string ToString()
         {
-            return this.data.ToString();
+            return "{ " + length.ToString() + " } " + linkedString.Substring(0, linkedString.Length - 4);
         }
 
     }
