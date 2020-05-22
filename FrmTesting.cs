@@ -39,17 +39,19 @@ namespace DevelopLinkedList
             //LbxOutput.Items.Add(Node.linkedString);
             //LbxOutput.Items.Add(myNode.ToString());
 
-            LinkedList myList = new LinkedList();
-            myList.AddToEnd(Convert.ToInt32(Txt01.Text));
-            myList.AddToEnd(Convert.ToInt32(Txt02.Text));
-            myList.AddToEnd(Convert.ToInt32(Txt03.Text));
-            myList.AddToEnd(Convert.ToInt32(Txt04.Text));
+            //LinkedList myList = new LinkedList();
+            //myList.AddToEnd(Convert.ToInt32(Txt01.Text));
+            //myList.AddToEnd(Convert.ToInt32(Txt02.Text));
+            //myList.AddToEnd(Convert.ToInt32(Txt03.Text));
+            //myList.AddToEnd(Convert.ToInt32(Txt04.Text));
+            //myList.AddToBeginning(12345);
 
-            myList.AddToBeginning(12345);
-            //myList.AddToBeginning(Convert.ToInt32(Txt01.Text));
-            //myList.AddToBeginning(Convert.ToInt32(Txt02.Text));
-            //myList.AddToBeginning(Convert.ToInt32(Txt03.Text));
-            //myList.AddToBeginning(Convert.ToInt32(Txt04.Text));
+            LinkedList myList = new LinkedList();
+            myList.AddSorted(Convert.ToInt32(Txt01.Text));
+            myList.AddSorted(Convert.ToInt32(Txt02.Text));
+            myList.AddSorted(Convert.ToInt32(Txt03.Text));
+            myList.AddSorted(Convert.ToInt32(Txt04.Text));
+
 
             LbxOutput.Items.Clear();
             LbxOutput.Items.Add(LinkedList.length);

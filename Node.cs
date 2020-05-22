@@ -32,6 +32,25 @@ namespace DevelopLinkedList
             length += 1;
         }
 
+        public void AddSorted(int data)
+        {
+            if (next == null)
+            {
+                next = new Node(data);
+            }
+            else if (data < next.data)
+            {
+                Node temp = new Node(data);
+                temp.next = this.next;
+                this.next = temp;
+            }
+            else
+            {
+                next.AddSorted(data);
+            }
+
+        }
+
         public void AddToEnd(int data)
         {
             if (next == null)
